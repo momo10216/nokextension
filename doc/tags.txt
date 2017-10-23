@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/23031794/joomla-3-x-tags-in-custom-component-fails

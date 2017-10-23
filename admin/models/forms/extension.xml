@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
+			readonly="true" />
+
+		<field name="name" type="text" label="COM_NOKEXTENSION_CONTAINER_FIELD_NAME_LABEL"
+			description="COM_NOKEXTENSION_CONTAINER_FIELD_NAME_DESC" size="40" required="true" />
+
+		<field name="contains_components" type="list" label="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_LABEL"
+			description="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_DESC"
+			class="btn-group btn-group-yesno"
+			size="1"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="contains_modules" type="list" label="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_LABEL"
+			description="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_DESC"
+			class="btn-group btn-group-yesno"
+			size="1"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="contains_plugins" type="list" label="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_LABEL"
+			description="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_DESC"
+			class="btn-group btn-group-yesno"
+			size="1"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="contains_templates" type="list" label="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_LABEL"
+			description="COM_NOKEXTENSION_CONTAINER_FIELD_PUBLISHED_DESC"
+			class="btn-group btn-group-yesno"
+			size="1"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="asset_id" type="hidden" filter="unset" />
+
+		<field name="createdby" type="text" label="COM_NOKEXTENSION_COMMON_FIELD_CREATEDBY_LABEL"
+			description="COM_NOKEXTENSION_COMMON_FIELD_CREATEDBY_DESC"
+			required="false"
+			readonly="true" />
+
+		<field name="createddate" type="calendar" label="COM_NOKEXTENSION_COMMON_FIELD_CREATEDDATE_LABEL"
+			description="COM_NOKEXTENSION_COMMON_FIELD_CREATEDDATE_DESC"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S" filter="user_utc"
+			required="false"
+			readonly="true" />
+
+		<field name="modifiedby" type="text" label="COM_NOKEXTENSION_COMMON_FIELD_MODIFIEDBY_LABEL"
+			description="COM_NOKEXTENSION_COMMON_FIELD_MODIFIEDBY_DESC"
+			required="false"
+			readonly="true" />
+
+		<field name="modifieddate" type="calendar" label="COM_NOKEXTENSION_COMMON_FIELD_MODIFIEDDATE_LABEL"
+			description="COM_NOKEXTENSION_COMMON_FIELD_MODIFIEDDATE_DESC"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S" filter="user_utc"
+			required="false"
+			readonly="true" />
+
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL"
+			description="JCONFIG_PERMISSIONS_DESC" validate="rules" filter="rules"
+			component="com_nokextension" section="container" />
+	</fieldset>
+</form>
