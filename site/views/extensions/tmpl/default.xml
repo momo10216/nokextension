@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_NOKEXTENSION_EXTENSIONS_VIEW_LIST_LAYOUT_TITLE">
+		<message><![CDATA[COM_NOKEXTENSION_EXTENSIONS_VIEW_LIST_LAYOUT_DESC]]></message>
+	</layout>
+	<fields name="params">
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_NOKEXTENSION_BASIC_OPTIONS_FIELDSET_LABEL">
+		</fieldset>
+	</fields>
+</metadata>
